@@ -22,6 +22,13 @@ class Snake:
         for square in range(3):
             self.add_segment()
 
+    def reset(self):
+        for segment in self.segments:
+            segment.goto(1000, 1000)
+        self.segments.clear()
+        self.create_snake()
+        self.head = self.segments[0]
+
     def add_segment(self):
         global Y_INDEX
         new_seg = Turtle("square")

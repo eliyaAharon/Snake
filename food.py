@@ -19,4 +19,4 @@ class Food(Turtle):
     def change_place(self):
         color = (randint(40, 255), randint(40, 255), randint(40, 255))
         self.color(color)
-        self.goto(randint(-280, 280), randint(-280, 280))
+        self.goto(randint(-260, 260), randint(-260, 260))
